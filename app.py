@@ -48,7 +48,8 @@ def calculer_calories_total(dejeuner, collation, diner):
         total += calories.get(item, 0)
     
     # Calcul des calories pour la collation
-    total += calories.get(collation, 0)
+   for item in collation.values():
+        total += calories.get(item, 0)
     
     # Calcul des calories pour le dîner
     for item in diner.values():
