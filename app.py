@@ -5,11 +5,11 @@ from fpdf import FPDF
 import datetime
 
 # --- Préférences utilisateur ---
-proteines = ["Poulet grillé", "Steak haché 5%", "Escalope de dinde"]
-feculents = ["Riz complet", "Pâtes complètes", "Patate douce", "Quinoa", "Lentilles"]
-legumes = ["Brocolis vapeur", "Haricots verts", "Courgettes rôties", "Carottes râpées", "Poêlée de champignons"]
-desserts = ["Yaourt nature + fruits rouges", "Compote sans sucre + 1 carré de chocolat noir", "Flan maison léger", "Fromage blanc + cannelle"]
-collations = ["Banane + 30g amandes", "Pain complet + beurre de cacahuète", "Shaker protéiné + fruit"]
+proteines = ["Poulet grillé 150G", "Steak haché 5% 150G", "Escalope de dinde 150G "]
+feculents = ["Riz complet 100g cuit", "Pâtes complètes 100g cuit", "Patate douce 150g ", "Quinoa 100g cuit", "Lentilles 100g cuit"]
+legumes = ["Brocolis vapeur 200g ", "Haricots verts 200g ", "Courgettes rôties 200g ", "Carottes râpées 150g", "Poêlée de champignons 150g"]
+desserts = ["Yaourt nature + fruits rouges", "Compote sans sucre 100g + 1 carré de chocolat noir", "Flan maison léger 150G", "Fromage blanc + cannelle 150G"]
+collations = ["Banane + 30g amandes", "Pain complet x2 + beurre de cacahuète 20g ", "Shaker protéiné + fruit"]
 
 # --- Calories approximatives par aliment ---
 calories = {
