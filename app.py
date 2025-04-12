@@ -39,12 +39,32 @@ def generer_menu():
     }
     return dejeuner, collation, diner
 
-# --- Calcul des calories ---
-def calculer_calories(repas):
+# --- Calcul des calories de chaque repas et total ---
+def calculer_calories_total(dejeuner, collation, diner):
     total = 0
-    for item in repas.values():
+    
+    # Calcul des calories pour le déjeuner
+    for item in dejeuner.values():
         total += calories.get(item, 0)
+    
+    # Calcul des calories pour la collation
+    total += calories.get(collation, 0)
+    
+    # Calcul des calories pour le dîner
+    for item in diner.values():
+        total += calories.get(item, 0)
+    
     return total
+
+# Exemple d'utilisation avec le menu généré
+dejeuner, collation, diner = generer_menu()  # Exemple de génération du menu
+
+# Calcul des calories totales de la journée
+total_calories = calculer_calories_total(dejeuner, collation, diner)
+
+# Affichage des calories totales
+print(f"Total calorique estimé pour la journée : {total_calories} kcal")
+
 
 # --- PDF export ---
 def export_pdf(dejeuner, collation, diner):
